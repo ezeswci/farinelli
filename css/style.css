@@ -1,0 +1,882 @@
+/*
+Theme Name: Farinelli
+Author: Juan Manuel Garcia Olivares
+Author URI: http://garciaolivares.me
+Description: Theme para Farinelli
+Version: 1.0
+*/
+/*
+Colores
+
+
+
+*/
+/* Reset
+-------------------------------------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+html {
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+
+  overflow-y: scroll;
+  /* Keeps page centred in all browsers regardless of content height */
+
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+
+}
+body {
+  background: #fff;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  /* tables still need 'cellspacing="0"' in the markup */
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+
+  outline: 0;
+}
+a img {
+  border: 0;
+}
+/* @group font-face */
+@font-face {
+  font-family: 'AvenirHeavy';
+  src: url('fonts/avenirltstd-heavy.eot');
+  src: url('fonts/avenirltstd-heavy.eot') format('embedded-opentype'), url('fonts/avenirltstd-heavy.ttf') format('truetype'), url('fonts/avenirltstd-heavy.svg') format('svg');
+}
+@font-face {
+  font-family: 'AvenirMedium';
+  src: url('fonts/avenirltstd-medium.eot');
+  src: url('fonts/avenirltstd-medium.eot') format('embedded-opentype'), url('fonts/avenirltstd-medium.ttf') format('truetype'), url('fonts/avenirltstd-medium.svg') format('svg');
+}
+@font-face {
+  font-family: 'TradeGothic';
+  src: url('fonts/tradegothicltstd.eot');
+  src: url('fonts/tradegothicltstd.eot') format('embedded-opentype'), url('fonts/tradegothicltstd.ttf') format('truetype'), url('fonts/tradegothicltstd.svg') format('svg');
+}
+@font-face {
+  font-family: 'TradeGothicBold';
+  src: url('fonts/tradegothicltstd-bd2.eot');
+  src: url('fonts/tradegothicltstd-bd2.eot') format('embedded-opentype'), url('fonts/tradegothicltstd-bd2.ttf') format('truetype'), url('fonts/tradegothicltstd-bd2.svg') format('svg');
+}
+@font-face {
+  font-family: 'TradeGothicCondensed';
+  src: url('fonts/tradegothicltstd-cn18.eot');
+  src: url('fonts/tradegothicltstd-cn18.eot') format('embedded-opentype'), url('fonts/tradegothicltstd-cn18.ttf') format('truetype'), url('fonts/tradegothicltstd-cn18.svg') format('svg');
+}
+@font-face {
+  font-family: 'TradeGothicBoldCondensed';
+  src: url('fonts/tradegothicltstd-bdcn20.eot');
+  src: url('fonts/tradegothicltstd-bdcn20.eot') format('embedded-opentype'), url('fonts/tradegothicltstd-bdcn20.ttf') format('truetype'), url('fonts/tradegothicltstd-bdcn20.svg') format('svg');
+}
+/* @end */
+/*main CSS */
+body {
+  background-color: white;
+  font-style: normal;
+  font-family: 'TradeGothic', arial, sans-serif;
+  font-variant: normal;
+  color: #575756;
+  border-color: #e42313;
+  border-style: solid;
+  border-width: 0px 25px;
+  margin: 0px 25px;
+}
+.clear {
+  clear: both;
+}
+.container {
+  width: 960px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+aside.menu {
+  width: 255px;
+  float: left;
+  position: fixed;
+  padding-top: 85px;
+}
+#main {
+  width: 63%;
+  float: right;
+}
+/* @group Sidebar */
+.menu hgroup {
+  background: url('images/logo.png') no-repeat 0 0;
+  width: 267px;
+  height: 124px;
+  margin-bottom: 75px;
+}
+.menu hgroup h1 a {
+  display: block;
+  text-indent: -88888px;
+  height: 120px;
+}
+.menu hgroup h3 {
+  display: none;
+}
+.menu nav ul.ppal {
+  background: url('images/menu.png') no-repeat 17px -3px;
+}
+.single .menu nav,
+.archive .menu nav {
+  background: none;
+}
+.menu .menu-del-dia {
+  background: url('images/menu.png') no-repeat 17px -210px;
+  display: block;
+  text-indent: -9999px;
+  height: 20px;
+  padding-left: 22px;
+  margin: 40px 0;
+}
+.menu nav ul li a {
+  display: block;
+  padding-left: 22px;
+  height: 20px;
+  text-indent: -9999px;
+}
+.home .menu nav ul.ppal li a:hover,
+.menu li.volver {
+  background: url('images/menu-hover.jpg') no-repeat left 8px;
+}
+.menu li.volver a {
+  background-image: url('images/menu.png');
+  background-repeat: no-repeat;
+  background-position: 22px -175px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+.menu .contact {
+  color: #e42313;
+  margin-left: 22px;
+  font: 1.5em/1.3em TradeGothicCondensed, Arial, sans-serif;
+}
+.menu .contact a {
+  color: #e42313;
+  text-decoration: none;
+}
+.menu .contact .sm {
+  background: url('images/twitter_fb.png') no-repeat 0 0;
+  display: block;
+  position: relative;
+  left: -1px;
+}
+.menu .contact li {
+  list-style: none;
+  display: inline-block;
+}
+.menu .contact li a {
+  display: block;
+  width: 13px;
+  height: 15px;
+  text-indent: -9999px;
+}
+/* @end */
+/* @group sections */
+section {
+  border-bottom: 2px solid #e42313;
+  padding-bottom: 60px;
+  min-height: 600px;
+}
+.single section,
+.archive section,
+section#cv {
+  border-top: 2px solid #e42313;
+  padding: 0;
+  margin-top: 85px;
+  min-height: 850px;
+}
+section#home {
+  height: 850px;
+  padding: 0;
+  padding-top: 85px;
+}
+section#prensa {
+  margin-bottom: 150px;
+}
+section h2 {
+  height: 50px;
+  margin: 43px 0 60px;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+section .entry {
+  font: 1.4em/1.5em 'TradeGothic', arial;
+  padding-left: 30px;
+}
+section .entry a {
+  text-decoration: none;
+  color: #575756;
+  font-family: 'TradeGothicBold', arial, sans-serif;
+}
+section .entry a:hover {
+  text-decoration: underline;
+}
+.suc {
+  overflow: hidden;
+  margin-bottom: 45px;
+}
+.suc .wp-post-image {
+  float: left;
+  margin-right: 25px;
+}
+.suc p,
+.suc a {
+  font: 1.4em 'TradeGothicCondensed', arial !important;
+}
+.suc a {
+  font: 20px 'TradeGothicBoldCondensed', arial, sans-serif !important;
+}
+.slider {
+  margin-bottom: 15px;
+  overflow: hidden;
+  width: 616px;
+}
+/* @group blog */
+.arriba {
+  float: right;
+  color: #e42313;
+  text-decoration: none;
+  font: 1.4em 'TradeGothicBold', arial;
+  margin: 20px 0;
+}
+#blog .blog-nav {
+  float: left;
+  padding-left: 22px;
+  font: 17px/1.2em 'TradeGothicBoldCondensed', arial, sans-serif;
+  width: 150px;
+}
+#blog .blog-nav h3 {
+  color: #e42313;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#blog .blog-nav h3 {
+  margin-top: 30px;
+}
+#blog .blog-nav h3:first-child {
+  margin: 0;
+}
+#blog .blog-nav li {
+  list-style: none;
+}
+#blog .blog-nav a {
+  color: #575756;
+  text-decoration: none;
+  font-family: 'TradeGothicCondensed';
+}
+#blog .posts {
+  width: 430px;
+  float: right;
+}
+#blog .posts .post {
+  border-bottom: 2px solid #e42313;
+  margin-bottom: 20px;
+}
+#blog .posts .post:last-child {
+  border: 0;
+}
+#blog .posts .post h4.date {
+  font: 1.7em/1.5em 'TradeGothicBoldCondensed', arial, sans-serif;
+  color: #e42313;
+}
+#blog .posts .post h3 a {
+  font: 2.6em/1.2em 'TradeGothicBoldCondensed', arial, sans-serif;
+  color: #e42313;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#blog .posts .post .post-entry {
+  margin-top: 5px;
+  font: 1.3em/1.5em 'TradeGothic', arial;
+  margin-bottom: 20px;
+}
+#blog .posts .post .post-entry p a {
+  color: #333;
+}
+#blog .posts .post .comment-link {
+  display: block;
+  font: 1.5em/1.5em 'TradeGothicBold', arial, sans-serif;
+  color: #575756;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+/* @group comments */
+.comments {
+  font-size: 1.2em;
+}
+.comments h3 {
+  font: 1.5em/1.5em 'TradeGothicBold', arial, sans-serif;
+  color: #e42313;
+  margin-bottom: 15px;
+}
+.comments form {
+  padding-bottom: 25px;
+}
+.comments form p {
+  margin-bottom: 10px		;
+}
+.comments form label {
+  display: block;
+  font: 1.3em/1.5em 'TradeGothic', arial;
+}
+.comments form input,
+.comments form textarea {
+  width: 180px;
+  padding: 5px;
+}
+.comments form textarea {
+  width: 250px;
+}
+.comments form input[type="submit"] {
+  background: #e42313;
+  color: #fff;
+  border: 0;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+.comments li.comment {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+.comments li.comment:last-child {
+  border: 0;
+}
+.comments li.comment p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+.comment-author .fn {
+  font-family: 'TradeGothicBold', arial, sans-serif;
+}
+.comment-author a {
+  color: #535352;
+  text-decoration: none;
+}
+.comment-meta {
+  text-align: right;
+  color: #535352;
+}
+.comment-meta a {
+  font-size: 0.8em;
+  text-decoration: none;
+}
+/* @end */
+/* @group pag */
+.pag {
+  font: 1.5em/1.5em 'TradeGothicBold', arial, sans-serif;
+  color: #575756;
+  text-decoration: none;
+}
+.pag a {
+  color: #575756;
+  text-decoration: none;
+}
+.pag .current {
+  color: #e42313;
+}
+/* @end */
+/* @end */
+/* @group menu */
+#menu .entry {
+  padding: 0;
+}
+#menu dl dt,
+#prensa dl dt {
+  color: #e42313;
+  text-decoration: none;
+  font: 20px/2em 'TradeGothicBoldCondensed', arial, sans-serif;
+  text-transform: uppercase;
+  padding-left: 22px;
+}
+#menu dl dt:hover,
+#menu dl dt.open,
+#prensa dl dt:hover,
+#prensa dl dt.open {
+  background: url('images/menu-hover.jpg') no-repeat left 14px;
+  cursor: pointer;
+}
+#menu dl dd,
+#prensa dl dd {
+  display: none;
+  padding-left: 22px;
+  margin-bottom: 25px;
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+#menu dl dd strong,
+#prensa dl dd strong {
+  font-family: 'TradeGothicBold', arial, sans-serif;
+}
+/* @end */
+/* @group titulos */
+#hoy h2 {
+  background-image: url(images/titulos/hoy.png);
+}
+#nosotros h2 {
+  background-image: url(images/titulos/nosotros.png);
+}
+#locales h2 {
+  background-image: url(images/titulos/locales.png);
+}
+#menu h2 {
+  background-image: url(images/titulos/menu.png);
+}
+#catering h2 {
+  background-image: url(images/titulos/catering.png);
+}
+#blog h2 {
+  background-image: url(images/titulos/blog.png);
+}
+#prensa h2 {
+  background-image: url(images/titulos/prensa.png);
+}
+#menu-del-dia h2 {
+  background-image: url(images/titulos/menu-del-dia.png);
+}
+#cv h2 {
+  background-image: url(images/titulos/cv.png);
+}
+#panaderia h2 {
+  background-image: url(images/titulos/panaderia.png);
+}
+/* @end */
+/* @end */
+/* @group Slider */
+ul.bjqs {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: none;
+}
+li.bjqs-slide {
+  position: absolute;
+  display: none;
+}
+ul.bjqs-controls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+ul.bjqs-controls.v-centered li a {
+  position: absolute;
+}
+ul.bjqs-controls.v-centered li.bjqs-next a {
+  right: 0;
+  font-size: 1.6em;
+  line-height: 1.5px;
+}
+ul.bjqs-controls.v-centered li.bjqs-prev a {
+  left: 0;
+}
+ol.bjqs-markers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+ol.bjqs-markers.h-centered {
+  text-align: center;
+}
+ol.bjqs-markers li {
+  display: inline;
+}
+ol.bjqs-markers li a {
+  display: inline-block;
+}
+p.bjqs-caption {
+  display: block;
+  width: 96%;
+  margin: 0;
+  padding: 2%;
+  position: absolute;
+  bottom: 0;
+}
+/* @end */
+/* @group delivery */
+/* @group estructura */
+section#delivery {
+  margin-bottom: 150px;
+  margin-top: 85px;
+  border-top: 2px solid #e42313;
+  border-bottom: 0;
+}
+/* @end */
+/* @group titulos */
+#step1 h2 {
+  background-image: url(images/titulos/pedidos-a-domicilio.png);
+}
+#step2 h2 {
+  background-image: url(images/titulos/menu-del-dia.png);
+}
+#step3 h2 {
+  background-image: url(images/titulos/datos-de-envio.png);
+}
+#step4 h2 {
+  background-image: url(images/titulos/pedido-confirmado.png);
+}
+/* @end */
+/* @group Menu */
+.page-template-delivery-php .menu nav {
+  background: none;
+}
+.page-template-delivery-php .menu nav ul {
+  margin-bottom: 20px;
+}
+.page-template-delivery-php .contact {
+  margin-top: 80px;
+}
+.menu li.volver-delivery {
+  background: url('images/menu-hover.jpg') no-repeat left 8px;
+}
+.menu li.volver-delivery a {
+  background-image: url('images/menu.png');
+  background-repeat: no-repeat;
+  background-position: 22px -150px;
+  height: 20px;
+  width: 60px;
+}
+.menu .pedidos li {
+  background: url(images/menu-delivery.png) no-repeat 0 0;
+  width: 190px;
+  display: block;
+  text-indent: -9999px;
+  height: 20px;
+}
+.menu .pedidos li.step1.active {
+  background-position: -200px 0px;
+}
+.menu .pedidos li.step2 {
+  background-position: 0 -20px;
+}
+.menu .pedidos li.step2.active {
+  background-position: -200px -20px;
+}
+.menu .pedidos li.step3 {
+  background-position: 0 -40px;
+}
+.menu .pedidos li.step3.active {
+  background-position: -200px -40px;
+}
+.menu .pedidos li.step4 {
+  background-position: 0 -60px;
+}
+.menu .pedidos li.step4.active {
+  background-position: -200px -60px;
+}
+.menu .basket {
+  margin-left: 25px;
+  margin-top: 35px;
+}
+.menu .basket ul li.total {
+  font: 20px 'TradeGothicBoldCondensed', arial;
+  text-transform: uppercase;
+  color: #e42313;
+}
+/* @end */
+/* @group menu */
+/* @end */
+#step2 .menu .envio {
+  border-bottom: 1px solid #575756;
+  margin-bottom: 40px;
+}
+#step2 .menu .envio p {
+  font: 15px 'TradeGothic', arial;
+  color: #e42313;
+  padding-bottom: 18px;
+}
+#step2 .menu .group .group-header {
+  overflow: hidden;
+  text-transform: uppercase;
+  font-family: 'TradeGothicBoldCondensed', arial;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #575756;
+}
+#step2 .menu .group .group-header h4 {
+  font-size: 22px;
+  line-height: 26px;
+  float: left;
+}
+#step2 .menu .group .group-header .qty {
+  float: right;
+  font-size: 18px ;
+}
+#step2 .menu .group .group-content {
+  clear: both;
+  margin-bottom: 40px;
+}
+#step2 .menu .group .group-content .group-item {
+  overflow: hidden;
+  padding: 15px 0 10px;
+  border-bottom: 1px solid #575756;
+}
+#step2 .menu .group .group-content .group-item h4 {
+  font-family: 'TradeGothic', arial;
+  float: left;
+}
+#step2 .menu .group .group-content .group-item select.qty {
+  float: right;
+  border: 1px solid #575756;
+  background-color: white;
+  width: 50px;
+  font-size: 12px;
+  padding: 2px;
+}
+#step2 .menu .group .group-content .item-pedido {
+  color: #e42313;
+}
+#step2 .menu .group .group-content .item-pedido select.qty {
+  border-color: #e42313;
+  color: #e42313;
+}
+#step3 .entry {
+  overflow: hidden;
+}
+#step3 .col.col1 {
+  float: left;
+  width: 45%;
+}
+#step3 .col.col1 form label {
+  color: #575756;
+  font-family: "TradeGothicCondensed";
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 25px;
+}
+#step3 .col.col1 form input,
+#step3 .col.col1 form select {
+  border: 1px solid #575756;
+  background-color: #fff;
+  font-size: 16px;
+  padding: 5px;
+  width: 225px;
+  color: #666;
+}
+#step3 .col.col1 form select {
+  width: 240px;
+}
+#step3 .col.col1 form .inline {
+  float: left;
+}
+#step3 .col.col1 form .inline input {
+  width: 105px;
+}
+#step3 .col.col1 form .inline:first-child {
+  margin-right: 10px;
+}
+#step3 .col.col1 form .control-group {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#step3 .col.col2 {
+  float: right;
+  width: 53%;
+}
+#step3 .col.col2 .map {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000;
+  margin-top: 24px;
+}
+#step3 .col.col2 .message {
+  display: none;
+  background: url(images/map_messages.png) no-repeat center top;
+  height: 60px;
+}
+#step3 .col.col2 .message.verify {
+  display: block;
+  background-position: center -137px;
+}
+#step3 .col.col2 .message.ok {
+  display: block;
+  background-position: center -77px;
+  height: 60px;
+}
+#step3 .col.col2 .message.out {
+  display: block;
+  height: 75px;
+}
+/* @end */
+/* Trabaja con nosotros */
+#cv form hr {
+  border: 0px;
+  border-top: 2px solid #e42313;
+  padding-bottom: 25px;
+}
+#cv form .form-control {
+  margin-bottom: 25px;
+}
+#cv form .form-control label {
+  color: #e42313;
+  text-decoration: none;
+  font: 22px/2em 'TradeGothicBoldCondensed', arial, sans-serif;
+  text-transform: uppercase;
+}
+#cv form .form-control label em {
+  font-style: italic;
+  color: rgba(228, 35, 19, 0.9);
+}
+#cv form .form-control .control {
+  margin: 15px 0;
+}
+#cv form .form-control .control input[type="text"],
+#cv form .form-control .control textarea {
+  border: 1px solid #aaa;
+  width: 250px;
+  font-size: 18px;
+}
+#cv form .form-control .control input[type="text"]:focus,
+#cv form .form-control .control textarea:focus {
+  border-color: #575757;
+}
+#cv form .form-control .control label {
+  color: #575756;
+  font: 16px/1em 'TradeGothicBoldCondensed', arial, sans-serif;
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 15px;
+}
+#cv form .form-control-big input {
+  width: 570px !important;
+  font-size: 1.4em !important;
+}
+#cv form .form-actions {
+  text-align: right;
+}
+#cv form .form-actions button {
+  background: #e42313;
+  padding: 10px 15px 5px;
+  text-transform: uppercase;
+  color: white;
+  border: 0px;
+  font: 20px 'TradeGothicBoldCondensed', arial, sans-serif;
+}
+#cv .alert-ok {
+  border: 2px solid #e42313;
+  padding: 20px;
+}
+#cv .alert-ok p {
+  font: 18px/2em 'TradeGothicBoldCondensed', arial, sans-serif;
+}
+.parsley-error-list {
+  color: #e42313;
+}
+.parsley-error {
+  border-color: #e42313;
+}

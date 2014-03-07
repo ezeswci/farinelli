@@ -1,0 +1,124 @@
+@media (max-width: 1100px) {
+	body {
+		margin: 0;
+	}
+
+}
+@media (max-width: 1030px) {
+	body {
+	}
+	.container {width:auto;}
+	aside.menu {
+		position: static;
+		float: none;
+		width: auto;
+		padding: 20px;
+		margin-bottom: 5px;
+		overflow: hidden;
+
+	}
+	.menu hgroup {
+		margin-bottom: 10px;
+		display: block;
+		margin: 10px auto;
+	}
+	.menu nav {
+		background: none;
+		margin: 10px 10px 10px 0;
+		float: left;
+		width: 200px;
+	}
+	.menu nav ul.ppal {
+		margin: 0px;
+		overflow: hidden;
+	}
+	.menu nav ul.ppal li a{
+		float: left;
+		width: 200px;
+	}
+	.menu nav ul.ppal li a:hover {
+		/*background-image: url('images/menu.png') !important;*/
+	}
+
+	.menu .contact {
+		float: right;
+		font-size: 1.7em;
+		line-height: 1.5em;
+	}
+
+
+	#main {
+		float: 	none;
+		width: auto;
+		margin: 0px auto;
+		padding: 0px 20px;
+	}
+	section {
+		padding-bottom: 30px !important;
+		min-height: auto;
+		width: auto;
+	}
+	section h2 {
+		margin: 30px 0;
+	}
+	section#home {
+		padding-top: 0;
+		height: auto;
+	}
+	#menu dl dt {
+		background: url('images/menu-hover.jpg') no-repeat left 14px;
+	}
+	#menu dl dd {
+		display: block !important;
+	}
+	#blog .posts {
+		width:76%;
+	}
+	#blog .blog-nav {
+		width: 19%;
+	}
+
+}
+
+
+@media (max-width: 720px) {
+	body {
+		border: none;
+		margin: 0;
+	}
+	.menu {
+		text-align: center;
+	}
+	.menu nav {
+		margin-bottom: 15px;
+	}
+	.menu .contact {
+		text-align: left;
+	}
+	#main { padding: 0px 25px;}
+	section .entry {
+		padding-left: 0 !important;
+	}
+	.slider {
+		width: 100%;
+		height: 100% !important;
+	}
+	#blog .posts,
+	#blog .blog-nav {
+		float: none;
+		width: auto;
+		padding:0
+
+	}
+
+
+}
+
+
+@media (max-width: 480px) {
+	.menu .contact,
+	.menu nav {
+		float: none;
+		margin-bottom: 10px;
+	}
+}
