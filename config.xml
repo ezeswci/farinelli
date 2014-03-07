@@ -6,10 +6,10 @@
         id        = "com.swci.celFarinelli"
         version   = "1.0.0">
 
-    <name>RestoApp</name>
+    <name>FarinelliApp</name>
 
     <description>
-        Resto App. Es una app para realizar pedidos de comidas por medio del celular.
+        Farinelli App. Es una app para realizar pedidos de comidas por medio del celular.
     </description>
 
     <author href="http://www.swci.com.ar" email="info@swci.com.ar">
