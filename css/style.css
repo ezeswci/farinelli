@@ -620,6 +620,8 @@ section#delivery {
 /* @group titulos */
 #step1 h2 {
   background-image: url(images/titulos/pedidos-a-domicilio.png);
+  width:100%;
+  max-width:459px;
 }
 #step2 h2 {
   background-image: url(images/titulos/menu-del-dia.png);
@@ -750,6 +752,7 @@ section#delivery {
 #step3 .col.col1 {
   float: left;
   width: 45%;
+  min-width:250px;
 }
 #step3 .col.col1 form label {
   color: #575756;
@@ -786,10 +789,11 @@ section#delivery {
 #step3 .col.col2 {
   float: right;
   width: 53%;
+  min-width:300px;
 }
 #step3 .col.col2 .map {
-  width: 300px;
-  height: 300px;
+	max-width:300px;
+	width:100%
   border: 1px solid #000;
   margin-top: 24px;
 }
@@ -879,4 +883,31 @@ section#delivery {
 }
 .parsley-error {
   border-color: #e42313;
+}
+.img_inicio{
+	float:left;
+	width:100%
+	max-width:575;
+	margin-bottom:10px;
+}
+.titulo_com{
+	margin-top:40px;
+	margin-bottom:60px;
+	width:100;
+	max-width:459px;
+}
+#table_f{
+	display: table;
+	height: 90%;
+	margin: auto;
+	width: 100%;
+}
+#cell_f{
+	display: table-cell;
+	vertical-align: middle;
+}.img_loading{
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	max-width:300px;
 }

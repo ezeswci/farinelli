@@ -80,6 +80,8 @@ xmlhttp.onreadystatechange=function()
     {
     document.getElementById("step3").innerHTML=xmlhttp.responseText;
 	nuevaSecion();
+	document.getElementsByClassName("step3 active").item(0).className="step3";
+	document.getElementsByClassName("step4 ").item(0).className="step4 active";
     }
   }
 xmlhttp.open("POST","http://www.swci.com.ar/restoapp/server/includes/realiza_pedido.php",true);

@@ -1,4 +1,0 @@
-farinelli
-=========
-
-Farinellis app
