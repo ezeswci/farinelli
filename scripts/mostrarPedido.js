@@ -18,7 +18,7 @@ xmlhttp.onreadystatechange=function()
     }
   }
 usu_id=window.sessionStorage.getItem("secion");
-xmlhttp.open("POST","http://www.swci.com.ar/restoapp/server/includes/mostrar_pedido.php",true);
+xmlhttp.open("POST","http://farinelli.com.ar/farapp/server/includes/mostrar_pedido.php",true);
 xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xmlhttp.send("cod=seg123&usu_id="+usu_id);
 }
@@ -41,7 +41,7 @@ xmlhttp.onreadystatechange=function()
     }
   }
 usu_id=window.sessionStorage.getItem("secion");
-xmlhttp.open("POST","http://www.swci.com.ar/restoapp/server/includes/quitar_del_carrito.php",true);
+xmlhttp.open("POST","http://farinelli.com.ar/farapp/server/includes/quitar_del_carrito.php",true);
 xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xmlhttp.send("pe_id="+id+"&cod=seg123&usu_id="+usu_id);
 }
