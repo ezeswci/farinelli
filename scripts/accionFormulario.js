@@ -47,6 +47,36 @@ xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xmlhttp.send("pe_id="+pe_id+"&cl_id="+id);
 }
 function formPedir(){
+	var calle= document.getElementById("calle").value;
+	var altura= document.getElementById("altura").value;
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    	respuesta=Number(xmlhttp.responseText);
+		if(respuesta==0){
+			alert("Calle no valida");
+		}else if(respuesta==1){
+			alert("Altura no valida");
+		}else{
+			formPedir2();
+		}
+    }
+  }
+xmlhttp.open("POST","http://farinelli.com.ar/farapp/server/includes/valida_calle.php",true);
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xmlhttp.send("calle="+calle+"&altura="+altura);
+}
+function formPedir2(){
 	
 	var pe_id = window.sessionStorage.getItem("secion");
 	var cl_id = document.getElementById("cl_id").value;
