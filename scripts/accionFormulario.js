@@ -19,7 +19,7 @@ xmlhttp.onreadystatechange=function()
     document.getElementById("step3").innerHTML=xmlhttp.responseText;
     }
   }
-xmlhttp.open("POST","http://farinelli.com.ar/farapp/server/includes/form_para_pedir.php",true);
+xmlhttp.open("POST","../server/includes/form_para_pedir.php",true);
 xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xmlhttp.send("pe_id="+pe_id);
 }
@@ -42,7 +42,7 @@ xmlhttp.onreadystatechange=function()
     document.getElementById("step3").innerHTML=xmlhttp.responseText;
     }
   }
-xmlhttp.open("POST","http://farinelli.com.ar/farapp/server/includes/form_para_pedir.php",true);
+xmlhttp.open("POST","../server/includes/form_para_pedir.php",true);
 xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xmlhttp.send("pe_id="+pe_id+"&cl_id="+id);
 }
@@ -62,17 +62,19 @@ xmlhttp.onreadystatechange=function()
   {
   if (xmlhttp.readyState==4 && xmlhttp.status==200)
     {
-    	respuesta=Number(xmlhttp.responseText);
+    	respuesta=xmlhttp.responseText;
+		//alert("respuesta:"+respuesta);
 		if(respuesta==0){
 			alert("Calle no valida");
 		}else if(respuesta==1){
 			alert("Altura no valida");
 		}else{
 			formPedir2();
+			//alert("Calle valida");
 		}
     }
   }
-xmlhttp.open("POST","http://farinelli.com.ar/farapp/server/includes/valida_calle.php",true);
+xmlhttp.open("POST","../server/includes/valida_calle.php",true);
 xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xmlhttp.send("calle="+calle+"&altura="+altura);
 }
@@ -114,7 +116,7 @@ xmlhttp.onreadystatechange=function()
 	document.getElementsByClassName("step4 ").item(0).className="step4 active";
     }
   }
-xmlhttp.open("POST","http://farinelli.com.ar/farapp/server/includes/realiza_pedido.php",true);
+xmlhttp.open("POST","../server/includes/realiza_pedido.php",true);
 xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xmlhttp.send("pe_id="+pe_id+"&cl_id="+cl_id+"&nombre="+nombre+"&meail="+mail+"&calle="+calle+"&altura="+altura+"&depto="+depto+"&tel="+tel+"&pago_efct="+pago_efct+"&detalle="+detalle+"&precio="+precio+"&horario="+horario);
 }

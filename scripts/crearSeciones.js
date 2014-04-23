@@ -34,7 +34,7 @@ xmlhttp.onreadystatechange=function()
 	//alert("valor de la secion: "+ value);
     }
   }
-xmlhttp.open("POST","http://farinelli.com.ar/farapp/server/includes/secion.php",true);
+xmlhttp.open("POST","../server/includes/secion.php",true);
 xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xmlhttp.send("cod=seg123");
 }
@@ -61,7 +61,7 @@ xmlhttp.onreadystatechange=function()
 	}
     }
   }
-xmlhttp.open("POST","http://farinelli.com.ar/farapp/server/includes/usu_mail_buscar.php",true);
+xmlhttp.open("POST","../server/includes/usu_mail_buscar.php",true);
 xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xmlhttp.send("usu_mail="+mail);
 }
@@ -87,7 +87,7 @@ xmlhttp.onreadystatechange=function()
 	}
     }
   }
-xmlhttp.open("POST","http://farinelli.com.ar/farapp/server/includes/usu_mail_buscar.php",true);
+xmlhttp.open("POST","../server/includes/usu_mail_buscar.php",true);
 xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xmlhttp.send("usu_mail="+mail);
 }
@@ -116,7 +116,7 @@ xmlhttp.onreadystatechange=function()
 	return value;
     }
   }
-xmlhttp.open("POST","http://farinelli.com.ar/farapp/server/includes/alta_usuarios.php",true);
+xmlhttp.open("POST","../server/includes/alta_usuarios.php",true);
 xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xmlhttp.send("usu="+usu+"&meail="+mail+"&tel="+tel+"&calle="+calle+"&altura="+altura+"&depto="+depto);
 }
