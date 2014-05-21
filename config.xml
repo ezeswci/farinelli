@@ -73,10 +73,10 @@
     <icon src="img/favicon.png"  gap:platform="android"    gap:density="xhdpi" />
     <icon src="img/favicon.png"     gap:platform="blackberry" />
     <icon src="img/favicon.png"     gap:platform="blackberry" gap:state="hover"/>
-    <icon src="img/favicon.png"            gap:platform="ios"        width="57" height="57" />
-    <icon src="img/favicon.png"            gap:platform="ios"        width="72" height="72" />
-    <icon src="img/favicon.png"         gap:platform="ios"        width="114" height="114" />
-    <icon src="img/favicon.png"         gap:platform="ios"        width="144" height="144" />
+    <icon src="img/logo57.fw.png"            gap:platform="ios"        width="57" height="57" />
+    <icon src="img/logo72.fw.png"            gap:platform="ios"        width="72" height="72" />
+    <icon src="img/logo144.fw.png"         gap:platform="ios"        width="114" height="114" />
+    <icon src="img/logo144.fw.png"         gap:platform="ios"        width="144" height="144" />
     <icon src="img/favicon.png"          gap:platform="webos" />
     <icon src="img/favicon.png"  gap:platform="winphone" />
     <icon src="img/favicon.png" gap:platform="winphone"   gap:role="background" />
@@ -87,7 +87,7 @@
     <gap:splash src="img/start2.jpg"  gap:platform="android" gap:density="hdpi" />
     <gap:splash src="img/start2.jpg" gap:platform="android" gap:density="xhdpi" />
     <gap:splash src="img/start1.jpg"         gap:platform="blackberry" />
-    <gap:splash src="img/start1.fw.png"    gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="img/start0.fw.png"    gap:platform="ios"     width="320" height="480" />
     <gap:splash src="img/start1.fw.png" gap:platform="ios"     width="640" height="960" />
     <gap:splash src="img/start2.fw.png"      gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="img/start3.fw.png"     gap:platform="ios"     width="1024" height="768" />
