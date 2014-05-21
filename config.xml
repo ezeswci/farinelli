@@ -6,7 +6,7 @@
         id        = "com.swci.celFarinelli"
         version   = "2.2.0">
 
-    <name>FarinelliApp</name>
+    <name>Farinelli</name>
 
     <description>
         Farinelli App. Es una app para realizar pedidos de comidas por medio del celular.
