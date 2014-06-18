@@ -17,7 +17,7 @@ xmlhttp.onreadystatechange=function()
     document.getElementById("entrada").innerHTML=xmlhttp.responseText;
     }
   }
-xmlhttp.open("POST","../server/includes/mostrar_inicio.php",true);
+xmlhttp.open("POST","http://farinelli.com.ar/farapp/server/includes/mostrar_inicio.php",true);
 xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xmlhttp.send("cod=seg123");
 }
