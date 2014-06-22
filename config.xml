@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.swci.celFarinelli"
-        version   = "2.5.0">
+        version   = "2.2.0">
 
     <name>Farinelli</name>
 
@@ -77,8 +77,11 @@
     <icon src="img/favicon.png"     gap:platform="blackberry" gap:state="hover"/>
     <icon src="img/logo57.png"            gap:platform="ios"        width="57" height="57" />
     <icon src="img/logo72.png"            gap:platform="ios"        width="72" height="72" />
-    <icon src="img/logo144.png"         gap:platform="ios"        width="114" height="114" />
+    <icon src="img/logo114.png"         gap:platform="ios"        width="114" height="114" />
     <icon src="img/logo144.png"         gap:platform="ios"        width="144" height="144" />
+	<icon src="img/logo76.png"            gap:platform="ios"        width="76" height="76" />
+    <icon src="img/logo120.png"         gap:platform="ios"        width="120" height="120" />
+    <icon src="img/logo152.png"         gap:platform="ios"        width="152" height="152" />
     <icon src="img/favicon.png"          gap:platform="webos" />
     <icon src="img/favicon.png"  gap:platform="winphone" />
     <icon src="img/favicon.png" gap:platform="winphone"   gap:role="background" />
